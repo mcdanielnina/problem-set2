@@ -1,0 +1,86 @@
+body{
+    font-family: Avenir, sans-serif; 
+    font-size: 16pt;
+    background: #ededed;
+    padding-left: 15px;
+    
+
+ }
+ header{
+     background: #ededed;
+     border-bottom: 30px #000000;
+     animation-name: magic;
+     animation-duration: 4s;
+     
+ }
+ @keyframes magic {
+     from {background:#ededed;}
+     to {background: #5c475c;}
+ }
+
+nav a{
+     color:black;
+     text-decoration: solid;
+
+ }
+ nav ul{
+     list-style-type: none;
+ }
+ .tea-map{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+
+ footer{
+     font-family:  Dancing Script, sans-serif;
+
+ }
+@media (prefers-color-scheme: dark){
+    header{
+        background: #1f1f1f;
+        animation-name: magic;
+        animation-duration: 4s;
+        
+    }
+    @keyframes magic {
+        from {background:#1f1f1f;}
+        to {background: #5c475c;}
+    }
+    nav a{
+        color: #B7A4B7;
+    }
+    a{
+        color: #B7A4B7;
+    }
+        
+    body{
+        color: #eee;
+        background: #1f1f1f;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    header{
+        background: #ededed;
+        animation-name: magic;
+        animation-duration: 4s;
+        
+    }
+    @keyframes magic {
+        from {background:#ededed;}
+        to {background: #5c475c;}
+    }
+    nav a{
+        color: #5c475c;
+    }
+    a{
+        color: #5c475c;
+    }
+        
+    body{
+        color: #121212;
+        background: #ededed;
+    }
+}
